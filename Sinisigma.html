@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For Her</title>
+  <style>
+    /* Set up the page */
+    body {
+      background: #fff0f5; /* soft pink background */
+      margin: 0;
+      font-family: 'Courier New', monospace;
+      overflow-x: hidden;
+    }
+
+    /* Intro section */
+    .intro {
+      min-height: 100vh; /* Fill the whole screen */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #e75480; /* romantic pink */
+      margin: 0;
+    }
+
+    /* Reveal section (hidden at first) */
+    .reveal {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: opacity 1.5s ease;
+    }
+
+    /* When we scroll to it, JavaScript adds this */
+    .reveal.show {
+      opacity: 1;
+    }
+
+    .message {
+      font-size: 2rem;
+      color: #c71585;
+      text-align: center;
+      max-width: 600px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sweet Intro -->
+  <section class="intro">
+    <h1>So there's this girl</h1>
+    <h1>And she is so</h1>
+    <h1>so pretty</h1>
+    <h1>like super pretty</h1>
+  </section>
+
+  <!-- Hidden Message That Reveals on Scroll -->
+  <section class="reveal" id="revealSection">
+    <div class="message">
+      I just wanted to say...  
+      <br><br>  
+      you're something really special. 🌸
+    </div>
+  </section>
+
+  <!-- JavaScript for scroll-based reveal -->
+  <script>
+    const revealSection = document.getElementById('revealSection');
+
+    window.addEventListener('scroll', () => {
+      const triggerPoint = window.innerHeight / 1.5;
+      const sectionTop = revealSection.getBoundingClientRect().top;
+
+      if (sectionTop < triggerPoint) {
+        revealSection.classList.add('show');
+      }
+    });
+  </script>
+
+</body>
+</html>
+<h1>And you mean something to me</h1>
+<h1>know that you always have a special place in my heart</h1>
+<h1>And know that</h1>
+<h1>"If you find someone you love in your life, then hang on to that love."</h1>
+<h1>after all</h1>
+<h1>"You can’t blame gravity for falling in love."</h1>
+<h1>as for me i'll go wherever the winds take me </h1>
+<h1>as long as you're happy</h1>
+<img src="image/ryan.jpg" alt="Ryan" style="width: 100%; max-width: 250px; border-radius: 20px; margin-top: 2rem; box-shadow: 0 8px 16px rgba(0,0,0,0.2);">
+<img src="image/gosling.jfif" alt="Gosling" style="width: 100%; max-width: 250px; border-radius: 20px; margin-top: 2rem; box-shadow: 0 8px 16px rgba(0,0,0,0.2);">
+<img src="image/gumpy.jfif" alt="Gumpy" style="width: 100%; max-width: 250px; border-radius: 20px; margin-top: 2rem; box-shadow: 0 8px 16px rgba(0,0,0,0.2);">
+<img src="image/gordinio.jfif" alt="Gordinio" style="width: 100%; max-width: 250px; border-radius: 20px; margin-top: 2rem; box-shadow: 0 8px 16px rgba(0,0,0,0.2);">
+<img src="image/batman.jfif" alt="Batman" style="width: 100%; max-width: 250px; border-radius: 20px; margin-top: 2rem; box-shadow: 0 8px 16px rgba(0,0,0,0.2);">
+<img src="image/andrew.jfif" alt="Andrew" style="width: 100%; max-width: 250px; border-radius: 20px; margin-top: 2rem; box-shadow: 0 8px 16px rgba(0,0,0,0.2);">
+
+
